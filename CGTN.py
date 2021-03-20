@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup as bf
 CGTN_Homepage=urlopen("https://www.cgtn.com/")
 CGTN_Homepage_Obj=bf(CGTN_Homepage.read(),'html.parser')
 
-fp=open("./"+time.strftime("%Y-%m-%d", time.localtime())+".md","w+")
+fp=open("./src/"+time.strftime("%Y-%m-%d", time.localtime())+".md","w+")
 
 CGTN_Aricle_Url_qc=[]
 
