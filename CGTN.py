@@ -27,7 +27,7 @@ for article_id in range(0,2):
 
     print('### ',CGTN_Article_Titlle,file=fp)
 
-    print(CGTN_Aricle_Url,file=fp)
+    print(CGTN_Aricle_Url,"\n\n",file=fp)
 
     
     CGTN_Article_qc=[]
