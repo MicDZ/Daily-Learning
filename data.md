@@ -1,0 +1,162 @@
+###  China says no compromise on sovereignty issues after talks with U.S. conclude 
+https://news.cgtn.com/news/2021-03-20/China-U-S-conclude-high-level-strategic-dialogue-YMbPQqY9Ta/index.html
+High-level strategic dialogue between China and the U.S. starts in Anchorage, Alaska, U.S., March 18, 2021. /Xinhua 
+
+China said the high-level strategic dialogue with the U.S. was "candid, constructive and beneficial" while admitting "there are still differences between the two sides" in a statement released to the media shortly after the talk was concluded on Friday local time. 
+
+The first face-to-face meeting between senior Chinese and U.S. Biden administration officials has wrapped up in Anchorage, Alaska. The two-day dialogue marked the first high-level contact between the two countries after their heads of state had a phone call on the eve of the Chinese New Year. 
+
+The meeting was attended by Yang Jiechi, a member of the Political Bureau of the Communist Party of China (CPC) Central Committee and director of the Office of the Foreign Affairs Commission of the CPC Central Committee, Chinese State Councilor and Foreign Minister Wang Yi, U.S. Secretary of State Antony Blinken and U.S. National Security Advisor Jake Sullivan. 
+
+Read more: 
+
+Yang Jiechi and Wang Yi meet with Chinese media after the China-U.S. high-level strategic dialogue 
+
+Latest on China-U.S. meeting in Alaska 
+
+According to a statement released by the Chinese delegation, the two sides "conducted candid, in-depth, long-term and constructive communication on their respective domestic and foreign policies, Sino-U.S. relations, and major international and regional issues of common concern." The statement also gave a detailed elaboration of China's stance on these issues. 
+
+Claiming that the two sides believed the dialogue was "timely and helpful, and deepened mutual understanding," the statement noted the dialogue took place at the invitation of the U.S. side as an important measure to implement the consensus of the two heads of state on the phone call. 
+
+The statement said that the bilateral relations "have encountered unprecedented serious difficulties" in the past few years as China's legitimate rights and interests were unreasonably suppressed. 
+
+"China is willing to strengthen strategic communication with the United States, promote mutually beneficial cooperation, properly manage differences, and promote the development of bilateral relations along a healthy and stable track to benefit the two peoples and promote lasting peace and prosperity in the world," the statement stressed. 
+
+Yang Jiechi (3rd L), a member of the Political Bureau of the Communist Party of China (CPC) Central Committee and director of the Office of the Foreign Affairs Commission of the CPC Central Committee, and Chinese State Councilor and Foreign Minister Wang Yi (2nd L) at the strategic dialogue between China and the U.S., in Anchorage, Alaska, U.S., March 18, 2021. /Chinese Foreign Ministry 
+
+CPC's ruling position 'a choice of history and people' 
+
+In the statement, the Chinese side emphasized that the ruling position of the Communist Party of China (CPC) is a choice of history and the people's choice, and the development of China is inseparable from CPC's leadership. 
+
+The ruling position of the CPC and the security of the system is "an intangible red line" and "must not be compromised," the statement highlighted. 
+
+It added that the socialist system with Chinese characteristics is the system most in line with China's national conditions and the "code" for China's development, and stated that China's development goal is to achieve the "two centenary" goals and the Chinese Dream of the great rejuvenation of the Chinese nation through hard work. 
+
+China's human rights, not an excuse for interference 
+
+The statement refuted U.S. blame on China's human rights and reaffirmed that China has always attached great importance to the protection and promotion of human rights, focusing on improving people's livelihood and promoting the all-round development of people. 
+
+"China will not impose its democratic system and values ​​on other countries, while firmly safeguarding its own political system and values, and opposes accusing and discrediting China and interfering in China's internal affairs under the guise of human rights issues," according to the statement. 
+
+China also pointed out that it has no intention to interfere in America's political system or to challenge and replace U.S. position and its influence. It called on the U.S. side to properly view China's political system, its development path, national strategies as well as its influence worldwide. 
+
+Yang Jiechi (R), a member of the Political Bureau of the Communist Party of China (CPC) Central Committee and director of the Office of the Foreign Affairs Commission of the CPC Central Committee, and Chinese State Councilor and Foreign Minister Wang Yi (L) attend the strategic dialogue between China and the U.S., in Anchorage, Alaska, U.S., March 18, 2021. /Chinese Foreign Ministry 
+
+Commitment to independent foreign policy of peace 
+
+In the statement, the Chinese side reiterated that its commitment to an independent foreign policy of peace, insist on independence, uphold peaceful development, uphold win-win cooperation, uphold multilateralism, uphold fairness and justice, and continue to promote the building of a community with a shared future for mankind 
+
+"We firmly defend national sovereignty and national dignity, and we firmly oppose other countries' accusations on China's internal affairs," it claimed, reiterating that China adheres to the path of peaceful development. 
+
+Viewing win-win cooperation as an important principle for China's development and golden rule for China's foreign relations, the statement said China also expected other countries to coexist peacefully with the country. 
+
+"China's development achievements have been made under open conditions, and the next step in pursuing high-quality development will also be promoted under more open conditions," added the statement. 
+
+China-U.S. meeting in Alaska: A 'frosting summit' or a reset? 
+
+Support for 'true multilateralism' 
+
+China also highlighted multilateralism in the statement by regarding it as an "important cornerstone of the current international system." 
+
+According to China, true multilateralism should adhere to the purposes and principles of the Charter of the United Nations, respect the basic norms of international relations, respect the sovereignty of all countries in the world, respect the diversity of civilizations, and work for the democratization of international relations. 
+
+"We are willing to work with the United States to maintain true multilateralism in the multilateral mechanism such as the United Nations and provide the international community with more and better international public products," said the statement. 
+
+In China's opinion, countries, big or small, rich or poor, strong or weak, are equal members of the international community. It called on the international community to listen to the voices of developing countries and enhance protections on the rights and interests of developing countries. 
+
+It suggested that China and the U.S., as the world's largest developing country and developed country, should work together to deepen North-South cooperation, including third-party market cooperation for developing countries, and jointly promote the realization of the United Nations 2030 Sustainable Development Goals. 
+
+China, U.S. need cooperation not confrontation 
+
+Regarding relationship between China and the U.S., the Chinese side stated that the essence of Sino-U.S. relations is mutual benefit and win-win, rather than a zero-sum game. 
+
+"Neither China nor the United States can bear the consequences of conflict and confrontation," the statement warned, calling on the two sides to "trust each other instead of suspicion, understand each other instead of accusing each other, and cooperate with each other instead of dismantling, so as to ensure that both sides focus on handling their domestic priorities and achieving their respective development goals." 
+
+The statement stressed that China's policy on U.S., with a high degree of stability and continuity, is committed to "achieving non-conflict, non-confrontation, mutual respect, and win-win cooperation with the U.S." 
+
+It called on the two sides to keep communication channels open, resume normal dialogue and exchange mechanisms, carry out mutually beneficial cooperation, so as to properly manage differences, and avoid misunderstandings and misjudgments. 
+
+"The two countries have the responsibility, ability, and wisdom to find a way to get along though the two countries have different political systems," the statement noted, suggesting it will be a historic contribution made by the two countries to human civilization. 
+
+According to the statement, two sides can conduct cooperation on the three most pressing tasks of the international community, namely the fight against COVID-19 pandemic, climate change and world economy recovery under the principle of two-way, mutual beneficial and balance of concerns. 
+
+China calls on U.S. to avoid confrontation, seek win-win cooperation 
+
+No compromise on Taiwan question 
+
+Calling the Taiwan question core to China's interests and a matter of China's sovereignty and territorial integrity, China reiterated that there is no compromise in this regard. 
+
+The statement attributed the serious difficulties in the bilateral relations to "the extremely wrong anti-China policies" implemented by the last U.S. administration. 
+
+Those policies seriously harmed China's interests as well as China-U.S. relations. China had to take proper and necessary measures to safeguard its sovereignty, security and development interest, said the statement. 
+
+It urged the U.S. side to abide by the One-China principle and the Three China-U.S. Joint Communiques, stop official exchanges and military contacts with Taiwan in any form, stop arms sales to Taiwan, refrain from helping Taiwan expand the so-called "international space" and refrain from sending any wrong signal to "Taiwan independence" forces. 
+
+It also warned the U.S. side not to try to "break China's bottom line" in order to avoid causing damage not only to the bilateral relations but also to the stability across the Taiwan Straits. 
+
+No rights to interfere in China's Hong Kong affairs 
+
+Regarding the recent decisions made by China's top legislature, the National People's Congress, on the improvement of electoral system in the Hong Kong Special Administrative Region (HKSAR), the Chinese delegation said the U.S. should respect the decision and follow the international law and basic norms of international relations. 
+
+"It is the central government's task to improve the electoral system of the Hong Kong Special Administrative Region. How to design, develop and improve the electoral system is China's internal affairs. No foreign government, organization or individual has the right to interfere," read the statement. 
+
+The delegation also urged the U.S. side rescind illegal sanctions against Chinese officials and institutions, stop meddle in Hong Kong affairs and other China's internal affairs, and stop hindering China's efforts in implementing the principle of "One Country, Two Systems." 
+
+"Don't try to mess up Hong Kong again, don't stop China from advancing the process of 'One Country, Two Systems,'" said the statement, pledging firm responses "if the United States continues to go its own way." 
+
+China: HK electoral system improvement a 'milestone' with solid legal basis 
+
+A national flag-raising ceremony is held to celebrate the 71st anniversary of the founding of the People's Republic of China at the Golden Bauhinia Square in Hong Kong, China, October 1, 2020. /Xinhua 
+
+'Xinjiang genocide' claim: 'Biggest lie of the century' 
+
+China also dismissed the claim that there is genocide in China's Xinjiang, calling it "the biggest lie of the century." 
+
+The delegation said the door of Xinjiang is wide open to the world. It welcomed exchanges with the U.S. side on the basis of mutual respect while stressed that China will not accept any investigation in Xinjiang based on the presumption of guilt by those who are biased, condescending and want to lecture China. 
+
+It is hoped that the U.S. side can respect facts, call off attacks against and smearing of China's Xinjiang policy, and abandon double standards on anti-terrorism, it added. 
+
+A group of Uygur people on their way to a festival event in Xinjiang Uygur Autonomous Region, northwest China. /CMG 
+
+Tibet 'part of China,' 'Dalai Lama has long engaged in anti-China separatist activities' 
+
+China also pointed out that the 14th Dalai Lama is a political exile who has long engaged in anti-China separatist activities under the guise of religion. 
+
+"It is hoped that the U.S. will abide by its commitment to recognize Tibet as part of China and not support 'Tibet independence,' handle Tibet-related issues carefully and properly, lift sanctions on relevant Chinese officials, and stop using Tibet-related issues to interfere in China's internal affairs," it stated. 
+
+Wang Yi dismisses Western rumors, welcomes foreigners to visit Xinjiang 
+
+According to the statement, the two sides agreed to maintain dialogue and communication in accordance with the spirit of the call between the two heads of state on February 11, carry out mutually beneficial cooperation, prevent misunderstanding and misjudgment, avoid conflict and confrontation, and promote the healthy and stable development of China-U.S. relations. 
+
+The two sides will establish a China-U.S. joint working group on climate change as an attempt to strengthen dialogue and cooperation in the field of climate change. 
+
+The two sides also exchanged views on a series of issues such as economy and trade, the military, law enforcement, humanities, health, cyber security, climate change, Iran nuclear, Afghanistan, the Korean Peninsula and Myanmar, and agreed to maintain and strengthen communication and coordination. 
+
+The two sides expressed the will to strengthen coordination and consultation on multilateral activities such as the G20 and APEC. 
+
+Copyright © 2020 CGTN. Beijing ICP prepared NO.16065310-3 
+
+###  Chinese diplomat urges U.S., UK to address problems of racism, xenophobia violence
+https://news.cgtn.com/news/2021-03-20/China-urges-U-S-UK-to-address-issues-of-racism-xenophobia-violence-YM6KPvTcD6/index.html
+A senior Chinese diplomat on Friday urged the United States, the United Kingdom, Australia, Canada and the "relevant" European Union countries to "address serious problems of racism, racial discrimination and xenophobic violence at home."  
+
+Chen Xu, China's permanent representative to the United Nations Office at Geneva (UNOG), made the statement at the ongoing 46th Session of the UN Human Rights Council.  
+
+"This year marks the 20th anniversary of the adoption of the Durban Declaration and Program of Action (DDPA). We support the African Group's view on mobilizing political will on the full and effective implementation of the DDPA," he said.  
+
+The COVID-19 pandemic, he said, has exacerbated the existing structural inequalities and systemic racism and racial discrimination, and requires a global response.  
+
+The U.S. has said at this UN meeting that it would face up to its own problems of racism and racial discrimination. "We hope that the United States could turn its public statements into concrete actions," said the Chinese diplomat.  
+
+Twitter screenshot of Chen Xu, China's permanent representative to the United Nations Office at Geneva (UNOG). /CGTN 
+
+The U.S. should address, among other things, racism, racial discrimination and police brutality, prohibit the spread of racist speech, crack down on discrimination and hate-driven violence against African and Asian Americans, and Muslims, protect the rights of ethnic minorities, commit itself to the international campaign against racism, and facilitate the implementation of the DDPA, Chen said.  
+
+"We urge the United Kingdom, Australia, Canada and the relevant EU countries to take steps likewise to address serious problems of racism, racial discrimination and xenophobic violence at home," he said.  
+
+China has always been firmly opposed to racism, racial discrimination, xenophobia, hate speech and related intolerance, said the Chinese diplomat.  
+
+China also agrees with the recommendations of UN High Commissioner for Human Rights Michelle Bachelet that call for "addressing the root causes of racism and inequality," Chen said.  
+
+Copyright © 2020 CGTN. Beijing ICP prepared NO.16065310-3 
+
