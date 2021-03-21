@@ -5,10 +5,9 @@ from bs4 import BeautifulSoup as bf
 CGTN_Homepage=urlopen("https://www.cgtn.com/")
 CGTN_Homepage_Obj=bf(CGTN_Homepage.read(),'html.parser')
 
-fp=open("./src/"+time.strftime("%Y-%m-%d", time.localtime())+".md","w+")
+fp=open("./src/"+time.strftime("%Y-%m-%d-CGTN", time.localtime())+".md","w+")
 
 CGTN_Aricle_Url_qc=[]
-
 
 for i in CGTN_Homepage_Obj.find_all('a',{"data-action":"News_Click"},href=True):
     if(not i['href'] in CGTN_Aricle_Url_qc):
@@ -16,9 +15,7 @@ for i in CGTN_Homepage_Obj.find_all('a',{"data-action":"News_Click"},href=True):
             CGTN_Aricle_Url_qc.append(i['href'])
 
 
-for article_id in range(0,2):
-    
-    CGTN_Aricle_Url=CGTN_Aricle_Url_qc[article_id]
+def Get_Article_CGTN(CGTN_Aricle_Url):
     CGTN_Article=urlopen(CGTN_Aricle_Url)
 
     CGTN_Article_Obj=bf(CGTN_Article.read(),'html.parser')
@@ -41,6 +38,11 @@ for article_id in range(0,2):
         if(a): 
             if(a!=' Share ' and a!='Copied'):
                 print(a,"\n",file=fp)
+
+
+for article_id in range(0,2):
+    Get_Article_CGTN(CGTN_Aricle_Url_qc[article_id])
+    
 
 
 
