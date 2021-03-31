@@ -39,7 +39,7 @@ jobs:
       run: |
         git config --global user.name 'MicDZ' 
         git config --global user.email 'micdzcn@gmail.com'
-    - name: Deploy Hexo 
+    - name: Deploy 
       run: |
         git add .
         git commit -m "Update."

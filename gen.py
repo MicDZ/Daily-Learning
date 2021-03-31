@@ -120,3 +120,5 @@ print("\t\t</div>",file=cu)
 print("</body>",file=cu)
 print("</html>",file=cu)
 fp.close()
+
+print("Success")
