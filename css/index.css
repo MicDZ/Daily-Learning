@@ -1,0 +1,35 @@
+hr {
+  width: 90%;
+  border-top: 1px dashed #000;
+  margin-top: 5%;
+  margin-bottom: 5%; }
+
+h1 {
+  margin: 0 auto;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  text-align: center; }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto; }
+  @media screen and (min-width: 700px) {
+    .container {
+      width: 60%; } }
+  @media screen and (max-width: 699px) {
+    .container {
+      width: 80%; } }
+  .container .author {
+    text-align: right;
+    color: #213846;
+    font-size: 1.2rem;
+    margin-right: 10%; }
+  .container .article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+
+/*# sourceMappingURL=index.css.map */
