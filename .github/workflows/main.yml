@@ -22,9 +22,6 @@ jobs:
     - name: Setup
       run: |
         pip3 install beautifulsoup4
-    - name: Setup
-      run: |
-        python3 gen.py
     - name: Setup Deploy Private Key
       env:
         DEPLOY_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}
@@ -41,6 +38,7 @@ jobs:
         git config --global user.email 'micdzcn@gmail.com'
     - name: Deploy 
       run: |
+        python3 gen.py
         git add .
         git commit -m "Update."
         git push -u origin master
