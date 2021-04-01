@@ -39,6 +39,7 @@ jobs:
     - name: Deploy 
       run: |
         python3 gen.py
+        vi /source/2021-04-01.html
         git add .
         git commit -m "Update."
         git push -u origin master
