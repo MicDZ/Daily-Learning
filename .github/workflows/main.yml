@@ -38,7 +38,5 @@ jobs:
         ls
         python3 gen.py
         git add .
-        git fetch --all
-        git reset --hard origin/master
-        git pull origin master
+        git commit -m "Update."
         git push origin master
