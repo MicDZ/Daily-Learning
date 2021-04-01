@@ -41,4 +41,4 @@ jobs:
         git fetch --all
         git reset --hard origin/master
         git pull origin master
-        mv .gitignore .gitignore-zai
+        git push origin master
