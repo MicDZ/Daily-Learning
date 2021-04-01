@@ -35,6 +35,7 @@ jobs:
         cp gen.py ./Daily-Learning-Site/gen.py
         cd Daily-Learning-Site
         pip3 install beautifulsoup4 
+        ls
         python3 gen.py
         git add .
         git fetch --all
