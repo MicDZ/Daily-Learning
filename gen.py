@@ -1,4 +1,5 @@
 import time
+import os
 
 from urllib.request import urlopen
 from bs4 import BeautifulSoup as bf
@@ -9,7 +10,6 @@ CGTN_Homepage_Obj=bf(CGTN_Homepage.read(),'html.parser')
 
 fp=open("./source/"+time.strftime("%Y-%m-%d", time.localtime())+".html","w+")
 cu=open("./index.html","w+")
-
 
 print("<!DOCTYPE html>",file=fp)
 print("<html>",file=fp)
@@ -113,6 +113,11 @@ def Get_Article_PO(PO_Article_Url):
 for i in range(0,3):
     Get_Article_PO(PO_Aricle_Url[i])
 
+print("\t\t<hr class=\"no-print\"><div class=\"control no-print\"><h1>控制台</h1><div class=\"panel\"><button onclick=\"jump(1)\" class=\"btn night\">查看往期</button><button onclick=\"jump(2)\" class=\"btn night\">打印</button></div></div>",file=fp)
+print("\t\t<hr class=\"no-print\"><div class=\"control no-print\"><h1>控制台</h1><div class=\"panel\"><button onclick=\"jump(1)\" class=\"btn night\">查看往期</button><button onclick=\"jump(2)\" class=\"btn night\">打印</button></div></div>",file=cu)
+
+
+
 print("\t\t</div>",file=fp)
 print("</body>",file=fp)
 print("</html>",file=fp)
@@ -122,4 +127,36 @@ print("</body>",file=cu)
 print("</html>",file=cu)
 fp.close()
 
+hi=open("./history.html","w+")
+
+Site_Url_Base="https://learn.micdz.cn/source/"
+def search(source):
+    files = os.listdir(source)
+    for i in files:
+        print(i)
+        filename,extension=os.path.splitext(i)
+        fullname=os.path.join(source,filename)
+        if(filename!='.DS_Store'):
+            print("\t\t\t<li>","<a href=\"",Site_Url_Base+filename,"\">",filename,"</a>","</li>",file=hi)
+
+
+
+
+print("<!DOCTYPE html>",file=hi)
+print("<html>",file=hi)
+print("<head>",file=hi)
+print("\t<meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /><title>每日语料素材积累</title><meta name=\"author\" content=\"MicDZ\"><link rel=\"stylesheet\" href=\"css/index.css\" /><script src=\"js/index.js\"></script><link rel=\"shortcut icon\" href=\"https://www.micdz.cn/img/h.jpeg\">",file=hi)
+print("</head>",file=hi)
+print("<body>",file=hi)
+print("\t<div class=\"container\">",file=hi)
+        
+print("\t\t<ul>",file=hi)
+search("./source")
+print("\t\t</ul>")
+print("\t\t</div>",file=hi)
+print("</body>",file=hi)
+print("</html>",file=hi)
+
+hi.close()
+ 
 print("Success")
