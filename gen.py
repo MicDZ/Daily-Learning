@@ -130,6 +130,9 @@ fp.close()
 hi=open("./history.html","w+")
 
 Site_Url_Base="https://learn.micdz.cn/source/"
+
+files_sort=[]
+
 def search(source):
     files = os.listdir(source)
     for i in files:
@@ -137,8 +140,7 @@ def search(source):
         filename,extension=os.path.splitext(i)
         fullname=os.path.join(source,filename)
         if(filename!='.DS_Store'):
-            print("\t\t\t<li>","<a href=\"",Site_Url_Base+filename,"\">",filename,"</a>","</li>",file=hi)
-
+            files_sort.append(filename)
 
 
 
@@ -152,6 +154,11 @@ print("\t<div class=\"container\">",file=hi)
         
 print("\t\t<ul>",file=hi)
 search("./source")
+files_sort.sort(reverse=True)
+for filename in files_sort:
+    print("\t\t\t<li>","<a href=\"",Site_Url_Base+filename,"\">",filename,"</a>","</li>",file=hi)
+
+
 print("\t\t</ul>")
 print("\t\t</div>",file=hi)
 print("</body>",file=hi)
