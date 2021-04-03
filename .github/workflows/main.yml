@@ -3,7 +3,7 @@
 on:
   push:
   schedule:
-    - cron: '0 16 * * *'
+    - cron: '0 22 * * *'
       
 jobs:
   build: 
