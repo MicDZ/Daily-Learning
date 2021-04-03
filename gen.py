@@ -113,8 +113,8 @@ def Get_Article_PO(PO_Article_Url):
 for i in range(0,3):
     Get_Article_PO(PO_Aricle_Url[i])
 
-print("\t\t<hr class=\"no-print\"><div class=\"control no-print\"><h1>控制台</h1><div class=\"panel\"><button onclick=\"jump(1)\" class=\"btn night\">查看往期</button><button onclick=\"jump(2)\" class=\"btn night\">打印</button></div></div>",file=fp)
-print("\t\t<hr class=\"no-print\"><div class=\"control no-print\"><h1>控制台</h1><div class=\"panel\"><button onclick=\"jump(1)\" class=\"btn night\">查看往期</button><button onclick=\"jump(2)\" class=\"btn night\">打印</button></div></div>",file=cu)
+print("\t\t<hr class=\"no-print\"><div class=\"control no-print\"><h1>控制台</h1><div class=\"panel\"><button onclick=\"jump(1)\" class=\"btn night\">查看往期</button><button onclick=\"jump(2)\" class=\"btn night\">打印</button></div></div><div class=\"info\"><p>更新日期",time.strftime("%Y-%m-%d", time.localtime()),"</p></div>",file=fp)
+print("\t\t<hr class=\"no-print\"><div class=\"control no-print\"><h1>控制台</h1><div class=\"panel\"><button onclick=\"jump(1)\" class=\"btn night\">查看往期</button><button onclick=\"jump(2)\" class=\"btn night\">打印</button></div></div><div class=\"info\"><p>更新日期",time.strftime("%Y-%m-%d", time.localtime()),"</p></div>",file=cu)
 
 
 
