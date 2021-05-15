@@ -15,6 +15,7 @@ for i in CGTN_Homepage_Obj.find_all('a',{"data-action":"News_Click"},href=True):
             CGTN_Aricle_Url_qc.append(i['href'])
 
 
+
 def Get_Article_CGTN(CGTN_Aricle_Url):
     CGTN_Article=urlopen(CGTN_Aricle_Url)
 
