@@ -1,4 +1,3 @@
-
 # master branch on push, auto run
 on:
   push:
@@ -17,17 +16,17 @@ jobs:
     
     - name: Setup Deploy Private Key
       env:
-        DEPLOY_PRIVATE_KEY_BOT: ${{ DEPLOY_PRIVATE_KEY_BOT }}
+        DEPLOY_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}
       run: |
         mkdir -p ~/.ssh/
-        echo "$DEPLOY_PRIVATE_KEY_BOT" > ~/.ssh/id_rsa 
+        echo "$DEPLOY_PRIVATE_KEY" > ~/.ssh/id_rsa 
         chmod 600 ~/.ssh/id_rsa
         ssh-keyscan github.com >> ~/.ssh/known_hosts
         
     - name: Setup Git Infomation
       run: | 
-        git config --global user.name 'micdzbot' 
-        git config --global user.email 'bot@micdz.cn'
+        git config --global user.name 'MicDZ' 
+        git config --global user.email 'micdzcn@gmail.com'
     - name: Update
       run: | 
         git clone "git@github.com:MicDZ/Daily-Learning-Site.git"
