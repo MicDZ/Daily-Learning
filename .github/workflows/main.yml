@@ -25,8 +25,8 @@ jobs:
         
     - name: Setup Git Infomation
       run: | 
-        git config --global user.name 'MicDZ' 
-        git config --global user.email 'micdzcn@gmail.com'
+        git config --global user.name 'micdzbot' 
+        git config --global user.email 'bot@micdz.cn'
     - name: Update
       run: | 
         git clone "git@github.com:MicDZ/Daily-Learning-Site.git"
