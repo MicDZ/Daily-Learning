@@ -44,13 +44,13 @@ def Get_Article_CGTN(CGTN_Aricle_Url):
     
     CGTN_Article_Titlle=CGTN_Article_Obj.find('div',class_="news-title").string
 
-    print('<h1>',CGTN_Article_Titlle,'</h1>',file=fp)
+    print('<h1 class=\"print\">',CGTN_Article_Titlle,'</h1>',file=fp)
     print('<hr>',file=fp)
-    print("<a href=\"",CGTN_Aricle_Url,"\">","原文链接","</a>","\n\n",file=fp)
+    print("<a class=\"no-print\" href=\"",CGTN_Aricle_Url,"\">","原文链接","</a>","\n\n",file=fp)
 
-    print('<h1>',CGTN_Article_Titlle,'</h1>',file=cu)
+    print('<h1 class=\"print\">',CGTN_Article_Titlle,'</h1>',file=cu)
     print('<hr>',file=cu)
-    print("<a href=\"",CGTN_Aricle_Url,"\">","原文链接","</a>","\n\n",file=cu)
+    print("<a class=\"no-print\" href=\"",CGTN_Aricle_Url,"\">","原文链接","</a>","\n\n",file=cu)
     
     CGTN_Article_qc=[]
 
@@ -94,15 +94,15 @@ def Get_Article_PO(PO_Article_Url):
 
     PO_Aricle_Obj=bf(PO_Aricle.read().decode('GB2312','ignore'),'html.parser')
 
-    print('<h1>',PO_Aricle_Obj.find_all('h1')[1].string,'</h1>',file=fp)
+    print('<h1 class=\"print\">',PO_Aricle_Obj.find_all('h1')[1].string,'</h1>',file=fp)
     print('<hr>',file=fp)
-    print("<div class=\"author\">",PO_Aricle_Obj.find('div',class_='author cf').string,"</div>","\n\n",file=fp)
-    print("<a href=\"",PO_Article_Url,"\">","原文链接","</a>","\n\n",file=fp)
+    print("<div class=\"author no-print\">",PO_Aricle_Obj.find('div',class_='author cf').string,"</div>","\n\n",file=fp)
+    print("<a class=\"no-print\" href=\"",PO_Article_Url,"\">","原文链接","</a>","\n\n",file=fp)
 
-    print('<h1>',PO_Aricle_Obj.find_all('h1')[1].string,'</h1>',file=cu)
+    print('<h1 class=\"print\">',PO_Aricle_Obj.find_all('h1')[1].string,'</h1>',file=cu)
     print('<hr>',file=cu)
     print("<div class=\"author\">",PO_Aricle_Obj.find('div',class_='author cf').string,"</div>","\n\n",file=cu)
-    print("<a href=\"",PO_Article_Url,"\">","原文链接","</a>","\n\n",file=cu)
+    print("<a class=\"no-print\" href=\"",PO_Article_Url,"\">","原文链接","</a>","\n\n",file=cu)
 
     for i in PO_Aricle_Obj.find_all('p'):
         if(i.string):
