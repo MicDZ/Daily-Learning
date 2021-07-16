@@ -1,0 +1,12 @@
+
+		<hr class="no-print"><div class="control no-print">
+        <h1>控制台</h1>
+        <div class="panel">
+            <button onclick="jump(1)" class="btn night">查看往期</button>
+            <button onclick="jump(2)" class="btn night">打印</button>
+        </div>
+        </div>
+        <div class="info no-print">
+		</div>
+</body>
+</html>

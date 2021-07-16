@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>每日语料素材积累</title><meta name="author" content="MicDZ">
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/index.js"></script>
+    <link rel="shortcut icon" href="https://www.micdz.cn/img/h.jpeg">
+</head>
+<body>
+	<div class="container">

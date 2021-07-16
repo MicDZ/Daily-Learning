@@ -30,12 +30,9 @@ jobs:
     - name: Update
       run: | 
         git clone "git@github.com:MicDZ/Daily-Learning-Site.git"
-        rm ./Daily-Learning-Site/gen.py
-        cp gen.py ./Daily-Learning-Site/gen.py
-        cd Daily-Learning-Site
         pip3 install beautifulsoup4 
-        ls
         python3 gen.py
+        cd Daily-Learning-Site
         git add .
         git commit -m "Update."
         git push origin master

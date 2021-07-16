@@ -6,168 +6,89 @@ from bs4 import BeautifulSoup as bf
 timenow = (datetime.datetime.utcnow() + datetime.timedelta(hours=8)) 
 timetext = timenow.strftime('%Y-%m-%d')
 
-CGTN_Homepage=urlopen("https://www.cgtn.com/")
-CGTN_Homepage_Obj=bf(CGTN_Homepage.read(),'html.parser')
-
-fp=open("./source/"+timetext+".html","w+")
-cu=open("./index.html","w+")
-
-print("<!DOCTYPE html>",file=fp)
-print("<html>",file=fp)
-print("<head>",file=fp)
-print("\t<meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /><title>每日语料素材积累</title><meta name=\"author\" content=\"MicDZ\"><link rel=\"stylesheet\" href=\"../css/index.css\" /><script src=\"../js/index.js\"></script><link rel=\"shortcut icon\" href=\"https://www.micdz.cn/img/h.jpeg\">",file=fp)
-print("</head>",file=fp)
-print("<body>",file=fp)
-print("\t<div class=\"container\">",file=fp)
-        
-
-print("<!DOCTYPE html>",file=cu)
-print("<html>",file=cu)
-print("<head>",file=cu)
-print("\t<meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /><title>每日语料素材积累</title><meta name=\"author\" content=\"MicDZ\"><link rel=\"stylesheet\" href=\"css/index.css\" /><script src=\"js/index.js\"></script><link rel=\"shortcut icon\" href=\"https://www.micdz.cn/img/h.jpeg\">",file=cu)
-print("</head>",file=cu)
-print("<body>",file=cu)
-print("\t<div class=\"container\">",file=cu)
-
-CGTN_Aricle_Url_qc=[]
-
-for i in CGTN_Homepage_Obj.find_all('a',{"data-action":"News_Click"},href=True):
-    if(not i['href'] in CGTN_Aricle_Url_qc):
-        if(len(i.get('class'))==0 and i['href'].find("special")==-1 and i['href'].find("event")==-1):
-            CGTN_Aricle_Url_qc.append(i['href'])
+Site=open(os.getcwd()+"/.temp/"+timetext+".html","w+") # 往期 
+Site_index=open(os.getcwd()+"/.temp/index.html","w+") # 主页
+History=open(os.getcwd()+"/.temp/history.html","w+") # 往期主页
 
 
-def Get_Article_CGTN(CGTN_Aricle_Url):
-    CGTN_Article=urlopen(CGTN_Aricle_Url)
-
-    CGTN_Article_Obj=bf(CGTN_Article.read(),'html.parser')
-    
-    CGTN_Article_Titlle=CGTN_Article_Obj.find('div',class_="news-title").string
-
-    print('<h1 class=\"print\">',CGTN_Article_Titlle,'</h1>',file=fp)
-    print('<hr>',file=fp)
-    print("<a class=\"no-print\" href=\"",CGTN_Aricle_Url,"\">","原文链接","</a>","\n\n",file=fp)
-
-    print('<h1 class=\"print\">',CGTN_Article_Titlle,'</h1>',file=cu)
-    print('<hr>',file=cu)
-    print("<a class=\"no-print\" href=\"",CGTN_Aricle_Url,"\">","原文链接","</a>","\n\n",file=cu)
-    
-    CGTN_Article_qc=[]
-
-    for i in CGTN_Article_Obj.find_all('p',_class=False):
-        if not i.string in CGTN_Article_qc:
-            CGTN_Article_qc.append(i)
+def print_time(site):
+    print("<br><p class=\"right\">更新日期",timetext,"</p></div>",file=site)
 
 
-    for a in CGTN_Article_qc:
-        if(a): 
-            if(a.string!=' Share ' and a.string!='Copied' and not a.get('class')):
-                print(a,"\n",file=fp)
-                print(a,"\n",file=cu)
-    print('<br>',file=fp)
-    print('<br>',file=cu)
+# 搜索爬虫目录下的所有爬虫
+crawler=[]
 
-for article_id in range(0,2):
-    Get_Article_CGTN(CGTN_Aricle_Url_qc[article_id])
-    
+def search(source,list):
+    files = os.listdir(source)
+    for i in files:
+        # print(i)
+        filename,extension=os.path.splitext(i)
+        fullname=os.path.join(source,filename)
+        if(filename!='.DS_Store' and filename!="file"):
+            list.append(filename)
 
+search(os.getcwd()+"/crawler",crawler)
 
+crawler.sort()
 
+# 运行所有的爬虫
 
-
-PO_Homepage=urlopen("http://opinion.people.com.cn/GB/8213/49160/index.html")
-PO_Homepage_Obj=bf(PO_Homepage.read(),'html.parser')
-PO_Base='http://opinion.people.com.cn'
-
-PO_Aricle_Url=[]
-PO_Aricle_Url_qc=[]
-
-for i in PO_Homepage_Obj.find_all('a',href=True):
-    if(i.parent.get('class') and len(i.parent.get('class'))!=0):
-        if(i.parent.get('class')[0]=='t14l14'):
-            PO_Aricle_Url.append(PO_Base+i['href'])
+for file in crawler:
+    os.system("python3 "+os.getcwd()+"/crawler/"+file+".py")
 
 
-
-def Get_Article_PO(PO_Article_Url):
-    PO_Aricle=urlopen(PO_Article_Url)
-
-    PO_Aricle_Obj=bf(PO_Aricle.read().decode('GB2312','ignore'),'html.parser')
-
-    print('<h1 class=\"print\">',PO_Aricle_Obj.find_all('h1')[1].string,'</h1>',file=fp)
-    print('<hr>',file=fp)
-    print("<div class=\"author no-print\">",PO_Aricle_Obj.find('div',class_='author cf').string,"</div>","\n\n",file=fp)
-    print("<a class=\"no-print\" href=\"",PO_Article_Url,"\">","原文链接","</a>","\n\n",file=fp)
-
-    print('<h1 class=\"print\">',PO_Aricle_Obj.find_all('h1')[1].string,'</h1>',file=cu)
-    print('<hr>',file=cu)
-    print("<div class=\"author\">",PO_Aricle_Obj.find('div',class_='author cf').string,"</div>","\n\n",file=cu)
-    print("<a class=\"no-print\" href=\"",PO_Article_Url,"\">","原文链接","</a>","\n\n",file=cu)
-
-    for i in PO_Aricle_Obj.find_all('p'):
-        if(i.string):
-            print(i,file=fp)
-            print(i,file=cu)
-    print('<br>',file=fp)
-    print('<br>',file=cu)
-
-for i in range(0,3):
-    Get_Article_PO(PO_Aricle_Url[i])
-
-print("<p class=\"right\">更新日期",timetext,"</p></div>",file=fp)
-print("<p class=\"right\">更新日期",timetext,"</p></div>",file=cu)
-
-print("\t\t<hr class=\"no-print\"><div class=\"control no-print\"><h1>控制台</h1><div class=\"panel\"><button onclick=\"jump(1)\" class=\"btn night\">查看往期</button><button onclick=\"jump(2)\" class=\"btn night\">打印</button></div></div><div class=\"info no-print\">",file=fp)
-print("\t\t<hr class=\"no-print\"><div class=\"control no-print\"><h1>控制台</h1><div class=\"panel\"><button onclick=\"jump(1)\" class=\"btn night\">查看往期</button><button onclick=\"jump(2)\" class=\"btn night\">打印</button></div></div><div class=\"info no-print\">",file=cu)
+# 输出主页
+head=open(os.getcwd()+"/src/head.txt", "r").read()
+tail=open(os.getcwd()+"/src/tail.txt", "r").read()
 
 
+print(head,file=Site_index)
 
-print("\t\t</div>",file=fp)
-print("</body>",file=fp)
-print("</html>",file=fp)
+for file in crawler:
+    file_data=open(os.getcwd()+"/crawler/file/"+file+".txt")
+    print(file_data.read(),file=Site_index)
+print_time(Site_index)
+print(tail,file=Site_index)
 
-print("\t\t</div>",file=cu)
-print("</body>",file=cu)
-print("</html>",file=cu)
-fp.close()
+# 输出往期
+head_son=open(os.getcwd()+"/src/head_son.txt", "r").read()
 
-hi=open("./history.html","w+")
+print(head_son,file=Site)
+
+for file in crawler:
+    file_data=open(os.getcwd()+"/crawler/file/"+file+".txt")
+    print(file_data.read(),file=Site)
+print_time(Site)
+
+print(tail,file=Site)
+
+# 输出往期主页
+
+history_page=[]
+
+search(os.getcwd()+"/Daily-Learning-Site/source/",history_page)
+
+print(head,file=History)
 
 Site_Url_Base="https://learn.micdz.cn/source/"
 
-files_sort=[]
+history_page.sort()
+for site in history_page:
+    print("\t\t\t<li>","<a href=\"",Site_Url_Base+site,"\">",site,"</a>","</li>",file=History)
 
-def search(source):
-    files = os.listdir(source)
-    for i in files:
-        print(i)
-        filename,extension=os.path.splitext(i)
-        fullname=os.path.join(source,filename)
-        if(filename!='.DS_Store'):
-            files_sort.append(filename)
+print_time(History)
+
+print(tail,file=History)
 
 
+# 复制文件
 
-print("<!DOCTYPE html>",file=hi)
-print("<html>",file=hi)
-print("<head>",file=hi)
-print("\t<meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" /><title>每日语料素材积累</title><meta name=\"author\" content=\"MicDZ\"><link rel=\"stylesheet\" href=\"css/index.css\" /><script src=\"js/index.js\"></script><link rel=\"shortcut icon\" href=\"https://www.micdz.cn/img/h.jpeg\">",file=hi)
-print("</head>",file=hi)
-print("<body>",file=hi)
-print("\t<div class=\"container\">",file=hi)
-        
-print("\t\t<ul>",file=hi)
-search("./source")
-files_sort.sort(reverse=True)
-for filename in files_sort:
-    print("\t\t\t<li>","<a href=\"",Site_Url_Base+filename,"\">",filename,"</a>","</li>",file=hi)
+os.system("rm "+os.getcwd()+"/Daily-Learning-Site/index.html")
+os.system("rm "+os.getcwd()+"/Daily-Learning-Site/history.html")
+
+os.system("cp "+os.getcwd()+"/.temp/index.html "+os.getcwd()+"/Daily-Learning-Site/index.html")
+os.system("cp "+os.getcwd()+"/.temp/"+timetext+".html "+os.getcwd()+"/Daily-Learning-Site/source/"+timetext+".html")
 
 
-print("\t\t</ul>")
-print("\t\t</div>",file=hi)
-print("</body>",file=hi)
-print("</html>",file=hi)
 
-hi.close()
- 
-print("Success")
+os.system("cp "+os.getcwd()+"/.temp/history.html "+os.getcwd()+"/Daily-Learning-Site/history.html")
