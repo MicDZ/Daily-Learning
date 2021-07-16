@@ -6,10 +6,10 @@ from bs4 import BeautifulSoup as bf
 timenow = (datetime.datetime.utcnow() + datetime.timedelta(hours=8)) 
 timetext = timenow.strftime('%Y-%m-%d')
 
-Site=open(os.getcwd()+"/.temp/"+timetext+".html","w+") # 往期 
+ 
 Site_index=open(os.getcwd()+"/.temp/index.html","w+") # 主页
 History=open(os.getcwd()+"/.temp/history.html","w+") # 往期主页
-
+Site=open(os.getcwd()+"/.temp/"+timetext+".html","w+") # 往期
 
 def print_time(site):
     print("<br><p class=\"right\">更新日期",timetext,"</p></div>",file=site)
