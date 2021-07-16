@@ -6,7 +6,8 @@ from bs4 import BeautifulSoup as bf
 timenow = (datetime.datetime.utcnow() + datetime.timedelta(hours=8)) 
 timetext = timenow.strftime('%Y-%m-%d')
 
- 
+os.system("touch "+os.getcwd()+"/.temp/"+timetext+".html")
+
 Site_index=open(os.getcwd()+"/.temp/index.html","w+") # 主页
 History=open(os.getcwd()+"/.temp/history.html","w+") # 往期主页
 Site=open(os.getcwd()+"/.temp/"+timetext+".html","w+") # 往期
