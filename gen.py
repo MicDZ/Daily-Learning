@@ -8,9 +8,9 @@ timetext = timenow.strftime('%Y-%m-%d')
 
 os.system("touch "+os.getcwd()+"/.temp/"+timetext+".html")
 
-Site_index=open(os.getcwd()+"/.temp/index.html","w+") # 主页
-History=open(os.getcwd()+"/.temp/history.html","w+") # 往期主页
-Site=open(os.getcwd()+"/.temp/"+timetext+".html","w+") # 往期
+Site_index=open(os.getcwd()+"/Daily-Learning-Site/index.html","w+") # 主页
+History=open(os.getcwd()+"/Daily-Learning-Site/history.html","w+") # 往期主页
+Site=open(os.getcwd()+"/Daily-Learning-Site/"+timetext+".html","w+") # 往期
 
 def print_time(site):
     print("<br><p class=\"right\">更新日期",timetext,"</p></div>",file=site)
@@ -84,12 +84,14 @@ print(tail,file=History)
 
 # 复制文件
 
-os.system("rm "+os.getcwd()+"/Daily-Learning-Site/index.html")
-os.system("rm "+os.getcwd()+"/Daily-Learning-Site/history.html")
+# os.system("rm "+os.getcwd()+"/Daily-Learning-Site/index.html")
+# os.system("rm "+os.getcwd()+"/Daily-Learning-Site/history.html")
 
-os.system("cp "+os.getcwd()+"/.temp/index.html "+os.getcwd()+"/Daily-Learning-Site/index.html")
-os.system("cp "+os.getcwd()+"/.temp/"+timetext+".html "+os.getcwd()+"/Daily-Learning-Site/source/"+timetext+".html")
+# print("cp "+os.getcwd()+"/.temp/index.html "+os.getcwd()+"/Daily-Learning-Site/index.html")
+
+# os.system("cp "+os.getcwd()+"/.temp/index.html "+os.getcwd()+"/Daily-Learning-Site/index.html")
+# os.system("cp "+os.getcwd()+"/.temp/"+timetext+".html "+os.getcwd()+"/Daily-Learning-Site/source/"+timetext+".html")
 
 
 
-os.system("cp "+os.getcwd()+"/.temp/history.html "+os.getcwd()+"/Daily-Learning-Site/history.html")
+# os.system("cp "+os.getcwd()+"/.temp/history.html "+os.getcwd()+"/Daily-Learning-Site/history.html")
