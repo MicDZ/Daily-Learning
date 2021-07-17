@@ -1,0 +1,6 @@
+
+		<hr class="no-print">
+        <div class="info no-print">
+		</div>
+</body>
+</html>

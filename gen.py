@@ -6,11 +6,18 @@ from bs4 import BeautifulSoup as bf
 timenow = (datetime.datetime.utcnow() + datetime.timedelta(hours=8)) 
 timetext = timenow.strftime('%Y-%m-%d')
 
-os.system("touch "+os.getcwd()+"/Daily-Learning-Site/"+timetext+".html")
+print(os.getcwd())
 
-Site_index=open(os.getcwd()+"/Daily-Learning-Site/index.html","w+") # 主页
-History=open(os.getcwd()+"/Daily-Learning-Site/history.html","w+") # 往期主页
-Site=open(os.getcwd()+"/Daily-Learning-Site/"+timetext+".html","w+") # 往期
+
+Home_page=os.getcwd()+"/Daily-Learning-Site/index.html" # 主页
+History_page=os.getcwd()+"/Daily-Learning-Site/history.html" # 往期主页
+Stored_page=os.getcwd()+"/Daily-Learning-Site/source/"+timetext+".html" # 往期
+
+os.system("touch "+Home_page)
+
+Home=open(Home_page,"w+") # 主页
+History=open(History_page,"w+") # 往期主页
+Stored=open(Stored_page,"w+") # 往期
 
 def print_time(site):
     print("<br><p class=\"right\">更新日期",timetext,"</p></div>",file=site)
@@ -39,47 +46,47 @@ for file in crawler:
 
 
 # 输出主页
-head=open(os.getcwd()+"/src/head.txt", "r").read()
-tail=open(os.getcwd()+"/src/tail.txt", "r").read()
+head=open(os.getcwd()+"/src/head.txt","r").read()
+tail=open(os.getcwd()+"/src/tail.txt","r").read()
+head_son=open(os.getcwd()+"/src/head_son.txt","r").read()
+tail_history=open(os.getcwd()+"/src/tail_history.txt","r").read()
 
-
-print(head,file=Site_index)
+print(head,file=Home)
 
 for file in crawler:
     file_data=open(os.getcwd()+"/crawler/file/"+file+".txt")
-    print(file_data.read(),file=Site_index)
-print_time(Site_index)
-print(tail,file=Site_index)
+    print(file_data.read(),file=Home)
+print_time(Home)
+print(tail,file=Home)
 
 # 输出往期
-head_son=open(os.getcwd()+"/src/head_son.txt", "r").read()
 
-print(head_son,file=Site)
+print(head_son,file=Stored)
 
 for file in crawler:
     file_data=open(os.getcwd()+"/crawler/file/"+file+".txt")
-    print(file_data.read(),file=Site)
-print_time(Site)
+    print(file_data.read(),file=Stored)
+print_time(Stored)
 
-print(tail,file=Site)
+print(tail,file=Stored)
 
 # 输出往期主页
 
-history_page=[]
+Stored_list=[]
 
-search(os.getcwd()+"/Daily-Learning-Site/source/",history_page)
+search(os.getcwd()+"/Daily-Learning-Site/source/",Stored_list)
 
 print(head,file=History)
 
 Site_Url_Base="https://learn.micdz.cn/source/"
 
-history_page.sort()
-for site in history_page:
+Stored_list.sort()
+for site in Stored_list:
     print("\t\t\t<li>","<a href=\"",Site_Url_Base+site,"\">",site,"</a>","</li>",file=History)
 
 print_time(History)
 
-print(tail,file=History)
+print(tail_history,file=History)
 
 
 # 复制文件
