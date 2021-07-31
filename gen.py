@@ -29,11 +29,13 @@ crawler=[]
 def search(source,list):
     files = os.listdir(source)
     for i in files:
-        # print(i)
+
         filename,extension=os.path.splitext(i)
-        fullname=os.path.join(source,filename)
-        if(filename!='.DS_Store' and filename!="file"):
+        # print(extension)
+        if extension == '.py':
             list.append(filename)
+
+
 
 search(os.getcwd()+"/crawler",crawler)
 
