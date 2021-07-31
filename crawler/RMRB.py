@@ -4,9 +4,9 @@ import datetime
 from urllib.request import urlopen
 from bs4 import BeautifulSoup as bf
 
-fp = open(os.getcwd()+"/crawler/file/RMRB.txt", "w+")
+fp = open(os.getcwd() + "/crawler/file/RMRB.txt", "w+")
 
-time_now = (datetime.datetime.utcnow() + datetime.timedelta(hours=8)) - datetime.timedelta(days=3)
+time_now = (datetime.datetime.utcnow() + datetime.timedelta(hours=8))
 timetext = time_now.strftime('%Y-%m-%d')
 timetext_site = time_now.strftime('%Y-%m/%d/')
 
@@ -29,9 +29,6 @@ def fetch_article_weekends():
     for i in range(2, 5):
         RMRB_Article_Url.append(
             RMRB_Pre_Base_Url + "nw.D110000renmrb_" + time_now.strftime('%Y%m%d_') + '1-0' + str(i) + '.htm')
-
-    for i in RMRB_Article_Url:
-        print(i)
 
 
 def fetch_article_weekdays():
@@ -61,7 +58,7 @@ def crawl_article():
 
         for i in article_Obj.find_all('p', class_=False):
             if i.string:
-                if i.string != 'ios版' and i.string != 'android版' and i.string !=  '微信小程序' :
+                if i.string != 'ios版' and i.string != 'android版' and i.string != '微信小程序':
                     print(i, file=fp)
         time.sleep(0.12)
 
