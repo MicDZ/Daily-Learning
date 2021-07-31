@@ -26,18 +26,18 @@ def print_time(site):
 # 搜索爬虫目录下的所有爬虫
 crawler=[]
 
-def search(source,list):
+def search(source,list,ex):
     files = os.listdir(source)
     for i in files:
 
         filename,extension=os.path.splitext(i)
         # print(extension)
-        if extension == '.py':
+        if extension == ex:
             list.append(filename)
 
 
 
-search(os.getcwd()+"/crawler",crawler)
+search(os.getcwd()+"/crawler",crawler,'.py')
 
 crawler.sort()
 
@@ -76,7 +76,7 @@ print(tail,file=Stored)
 
 Stored_list=[]
 
-search(os.getcwd()+"/Daily-Learning-Site/source/",Stored_list)
+search(os.getcwd()+"/Daily-Learning-Site/source/",Stored_list,'.html')
 
 print(head,file=History)
 
