@@ -17,7 +17,8 @@ Weekday = time_now.weekday() + 1
 
 RMRB_Article_Url = []
 
-
+RMRB_Homepage = urlopen(RMRB_Pre_Base_Url + RMRB_Suf_Base_Url + "01.htm")
+RMRB_Homepage_Obj = bf(RMRB_Homepage.read(), 'html.parser')
 def remove_duplicate(list):
     tmp = []
     for item in list:
@@ -26,12 +27,14 @@ def remove_duplicate(list):
 
 
 def fetch_article_weekends():
+    print("Weekends")
     for i in range(2, 5):
         RMRB_Article_Url.append(
             RMRB_Pre_Base_Url + "nw.D110000renmrb_" + time_now.strftime('%Y%m%d_') + '1-0' + str(i) + '.htm')
 
 
 def fetch_article_weekdays():
+    print("Weekdays")
     tag = RMRB_Homepage_Obj.find_all('a', id='pageLink', href=True)
     page_id = []
 
@@ -39,7 +42,7 @@ def fetch_article_weekdays():
         if '评论' in site.string:
             length = len(site['href'])
             page_id = site['href'][length - 6:length - 4]
-
+    print(page_id)
     for i in range(1, 4):
         RMRB_Article_Url.append(
             RMRB_Pre_Base_Url + "nw.D110000renmrb_" + time_now.strftime('%Y%m%d_') + str(i) + '-' + page_id + '.htm')
@@ -63,16 +66,26 @@ def crawl_article():
         time.sleep(0.12)
 
 
+def is_weekday():
+    
+    cnt = 0
+    for i in RMRB_Homepage_Obj.find_all('div', class_='swiper-slide'):
+        cnt = cnt + 1
+    if cnt > 8 :
+        return 1
+    else :
+        return 0 
+
+
 if __name__ == '__main__':
     # print(RMRB_Pre_Base_Url + timetext_site + RMRB_Suf_Base_Url + "01.html")
 
-    RMRB_Homepage = urlopen(RMRB_Pre_Base_Url + RMRB_Suf_Base_Url + "01.htm")
-    RMRB_Homepage_Obj = bf(RMRB_Homepage.read(), 'html.parser')
+    print(is_weekday())
 
-    if Weekday == 6 or Weekday == 7:
-        fetch_article_weekends()
-    else:
+    if is_weekday():
         fetch_article_weekdays()
+    else:
+        fetch_article_weekends()
 
     remove_duplicate(RMRB_Article_Url)
     crawl_article()
