@@ -4,7 +4,6 @@
 - [X] 每日爬取CGTN文章
 - [X] 每日自动发布到 [Daily-Learning-Site](https://www.github.com/MicDZ/Daily-Learning-Site)
 
-
 # 参与项目
 ## 运行
 ### 依赖
