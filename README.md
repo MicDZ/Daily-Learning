@@ -1,9 +1,10 @@
 # 每日语料积累
 
-- [X]  每日爬取人民日报文章
+- [X] 每日爬取人民日报文章
 - [X] 每日爬取CGTN文章
 - [X] 每日自动发布到 [Daily-Learning-Site](https://www.github.com/MicDZ/Daily-Learning-Site)
 - [ ] 实现基于语意识别的文章爬取
+- [ ] 优化结构
 
 # 参与项目
 ## 运行
